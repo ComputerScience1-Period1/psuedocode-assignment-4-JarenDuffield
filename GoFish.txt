@@ -1,0 +1,14 @@
+Go Fish is a card game that uses all 52 cards in the deck.
+First one person shuffles the deck to make cards random.
+Then that one person passes 1 card to everyone(clockwise) starting with the person to their left. 
+Repeat until each person has recieved 5 cards included the dealer.
+When each player recieved those cards put equal valued cards together acsending in value form 2-Ace.
+If you have all 4 of a card value put it down gaining a point.
+Example if you are dealing all 4 aces and 1 King put the 4 aces down gaining that point.
+If you get the starting 5 with no pairs or matching 4 put them in order and get ready for your turn.
+The person to the left of the dealer starts by asking one person if they have that value of the card their asking for.
+The person receiving the question gives the person who is asking them the value of card the asked for.
+If they don't have that value/card they say GO FISH.
+Then person asking the question would take a card from the deck.
+If they aqcuire the card they originally asked for they get to ask again.
+If you don't they put the card they aquired from the deck then put the card in their hand of cards and the turn goes to the person to the left of them.

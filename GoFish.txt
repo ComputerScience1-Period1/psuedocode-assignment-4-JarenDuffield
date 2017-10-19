@@ -1,6 +1,6 @@
 // Go Fish is a card game that uses all 52 cards in the deck.
 
-
+need an array to store the cards in at least.
 
 Shuffle cards.
 Pass 1 card to each person.

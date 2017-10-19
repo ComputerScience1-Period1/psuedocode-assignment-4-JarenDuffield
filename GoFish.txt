@@ -6,13 +6,13 @@ Shuffle cards.
 Pass 1 card to each person.
 Repeat until each person has recieved 5 cards included the dealer:
         Place the rest of the deck in the middle of the players deck = draw deck.
-     While each player recieved cards:
-        Else in ascending order leave it
-        If not put in ascending order from 2 to Ace.
-    Else if you recieve all 4 of a card:
-        Place down all 4 cards for a point
-        If not don't put cards down.
-        If you get the starting 5 with no pairs or matching 4 put them in order.
+     While each player has cards: // you don't want to say "recieved" because that limits it to when the players have 5 cards
+        if in ascending order leave it
+        if you recieve all 4 of a card: // don't use else because then it wont check it every time 
+                Place down all 4 cards for a point
+        // If not don't put cards down. <- you don't need this because if the if-statement isn't met, it won't run
+        If you get the starting 5 with no pairs or matching 4 put them in order. // what order? make sure to clarify
+        else put in ascending order from 2 to Ace. // you want this at the end because you have checked everything 
         
 //Example if you are dealt all 4 aces and 1 King put the 4 aces down gaining that point.
      

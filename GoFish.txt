@@ -1,40 +1,115 @@
 // Go Fish is a card game that uses all 52 cards in the deck.
+// Minimum Players? Max Players? How do the cards change according to the amount of players?
 
 
 
 Shuffle cards.
 Pass 1 card to each person.
-Repeat until each person has recieved 5 cards included the dealer:
-        Place the rest of the deck in the middle of the players deck = draw deck.
-     While each player recieved cards:
-        Else in ascending order leave it
-        If not put in ascending order from 2 to Ace.
-    Else if you recieve all 4 of a card:
-        Place down all 4 cards for a point
-        If not don't put cards down.
-        If you get the starting 5 with no pairs or matching 4 put them in order.
+place the rest of the deck in the middle of the players = draw deck
+
+//suggested
+//reviewed by Vathys and ErikTheCleric
+
+for(int i = 0; i < numberofplayersplaying; i++)
+        if player i card in ascending order:
+                leave it
+        else
+                put in ascending order from 2 to Ace
+        if player i recieve all 4 cards:
+                place down cards
+                add point
+                
+        while player asks for a card:
+                if card in player i deck:
+                        ask
+                else:
+                        choose another card
+                        
+        if player asks for your card && you have card:
+                give cards to asking player
+        else 
+                say Go Fish
+        
+        while they recieve a card:
+                get card
+                if player i have all 4 cards:
+                        place down cards
+                        add point
+                        if out of cards:
+                                draw 5 more cards
+                                if 0 < draw deck < 5:
+                                        draw remaining card
+                                else if draw deck == 0:
+                                        break
+                ask for another card
+                
+        draw 1 card from draw deck
+                if player i have all 4 cards:
+                        place down cards
+                        add point
+                        if out of cards:
+                                draw 5 more cards
+                                if 0 < draw deck < 5:
+                                        draw remaining card
+                                else if draw deck == 0:
+                                        break
+              
+sort players from highest to lowest
+if first player and second player have equal points:
+        tie
+else
+        first player wins
+
+
+
+//original
+Shuffle cards.
+Pass 1 card to each person.
+
+
+Repeat until each person has recieved 5 cards including the dealer:
+        place the rest of the deck in the middle of the players = draw deck
+        While each player recieved cards:
+                if in ascending order
+                        leave it
+                else
+                        put in ascending order from 2 to Ace.
+        if you recieve all 4 of a card:
+                Place down all 4 cards for a point
+        else
+                Don't put cards down.
         
 //Example if you are dealt all 4 aces and 1 King put the 4 aces down gaining that point.
      
-    While player asks for a card it must be a card in their deck
-        If not they can't ask
-    Else if player asks you for card:
-        If you have cards give cards of value
-        If not say Go Fish
+        While player asks for a card:
+                if card in their deck:
+                        ask
+                else:
+                        don't ask
+    
+        if player asks you for card:
+                If you have cards:
+                        give cards of value
+                else:
+                        say Go Fish
         
 //Example if the one player asks you for a 3, give all 3's if not Go Fish.
-
-    If the person didn't recieve card they asked for pull a card from deck:
-        If the person recieves the card they asked for
-    Repeat turn:
-        If not turn is over.
+        
+        if person recieved the card they asked for:
+                repeat turn
+        else if person didn't recieve card they ask
+    If the person didn't recieve card they asked for:
+        pull a card from deck
+    Else if the person recieved the card they asked for:
+        Repeat turn:
+             
     Else if you have run out of cards:
         If you run out of cards draw 5 from deck
         If deck < 5 take all cards.
         If no cards in deck wait until game is over.
         
     Repeat turns until cards are empty:
-        If cards for everyone have emptied count points to find winner
+        If cards for everyone have emptied, count points to find winner
         If player has all 4 of a card they have one point
         If the 4 matching cards are face cards or 2-10 cards they are same value in points+ 
         // Count all points and add up

@@ -3,28 +3,29 @@
 
 
 Shuffle cards.
+Players sit in a circle, or around a table.
 Pass 1 card to each person.
-Repeat until each person has recieved 5 cards included the dealer:
-        Place the rest of the deck in the middle of the players deck = draw deck.
+Repeat until each person has recieved 5 cards including the dealer:
+        Place the rest of the deck in the middle of the circle.
+        The cards in the middle are now the draw deck.
      While each player recieved cards:
         Else in ascending order leave it
         If not put in ascending order from 2 to Ace.
-    Else if you recieve all 4 of a card:
+    If you recieve all 4 of a card:
         Place down all 4 cards for a point
         If not don't put cards down.
-        If you get the starting 5 with no pairs or matching 4 put them in order.
         
 //Example if you are dealt all 4 aces and 1 King put the 4 aces down gaining that point.
      
     While player asks for a card it must be a card in their deck
         If not they can't ask
     Else if player asks you for card:
-        If you have cards give cards of value
+        If you have the card asked for, give cards of that value
         If not say Go Fish
         
 //Example if the one player asks you for a 3, give all 3's if not Go Fish.
 
-    If the person didn't recieve card they asked for pull a card from deck:
+    If the person didn't recieve card they asked for pull a card from draw deck:
         If the person recieves the card they asked for
     Repeat turn:
         If not turn is over.

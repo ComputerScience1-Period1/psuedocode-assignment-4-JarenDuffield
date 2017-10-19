@@ -10,13 +10,13 @@ Repeat until each person has recieved 5 cards included the dealer:
         Else in ascending order leave it
         If not put in ascending order from 2 to Ace.
     Else if you recieve all 4 of a card:
-        Place down all 4 cards for a point
+        Place down all 4 cards for a point//called a
         If not don't put cards down.
         If you get the starting 5 with no pairs or matching 4 put them in order.
         
 //Example if you are dealt all 4 aces and 1 King put the 4 aces down gaining that point.
      
-    While player asks for a card it must be a card in their deck
+    While player asks for a card it must be a card in their hand
         If not they can't ask
     Else if player asks you for card:
         If you have cards give cards of value
@@ -24,9 +24,15 @@ Repeat until each person has recieved 5 cards included the dealer:
         
 //Example if the one player asks you for a 3, give all 3's if not Go Fish.
 
-    If the person didn't recieve card they asked for pull a card from deck:
-        If the person recieves the card they asked for
-    Repeat turn:
+    If(nocardrecieved==true){
+        drawdeck-1
+        }
+        While(nocardrecieved==false){
+                
+                if (nocardrecieved=true)
+                 drawdeck=drawdeck-1;
+                run next player turn
+    }
         If not turn is over.
     Else if you have run out of cards:
         If you run out of cards draw 5 from deck

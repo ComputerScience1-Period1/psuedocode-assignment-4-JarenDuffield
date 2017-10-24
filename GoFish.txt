@@ -1,7 +1,7 @@
 // Go Fish is a card game that uses all 52 cards in the deck.
 
 
-Players sit in a circle, or around a table.
+Players sit in a circle, or around a table. //What is the max amount of players the game can support?
 Shuffle cards.
 Pass 1 card to each person.
 Repeat until each person has recieved 5 cards including the dealer:
@@ -20,7 +20,7 @@ Repeat until each person has recieved 5 cards including the dealer:
         
 //Example if you are dealt all 4 aces and 1 King put the 4 aces down gaining that point.
        While player asks for a card it must be a card in their deck
-                If not they can't ask
+                If card not in hand player cannot ask for the card they asked
         Else if player asks you for card:
                 If you have cards give cards of value
         If not say Go Fish
@@ -32,7 +32,7 @@ Repeat until each person has recieved 5 cards including the dealer:
     Repeat turn:
         If not turn is over.
         If you have run out of cards:
-                If you run out of cards draw 5 from deck
+                draw 5 from deck
         If deck < 5:
                 take all cards.
         If no cards in deck:
@@ -47,7 +47,7 @@ Repeat until each person has recieved 5 cards including the dealer:
                 add one point 
         // Count all points and add up
         If player has more points than the other players they win
-        If tie no winner.
+        If points equal to each other players points there no winner.
   
 //You win if you end the game with more points than your opponent
   One point = 4 of same card value

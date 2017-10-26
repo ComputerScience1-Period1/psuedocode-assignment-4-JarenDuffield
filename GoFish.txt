@@ -3,7 +3,7 @@
 
 Players sit in a circle, or around a table.
 Shuffle cards.
-Pass 1 card to each person.
+Pass 1 card to each person, in a clockwise order.
 Repeat until each person has recieved 5 cards including the dealer:
         Place the rest of the deck in the middle of the circle.
         The cards in the middle are now the draw deck.
@@ -25,8 +25,6 @@ Repeat until each person has recieved 5 cards including the dealer:
                 If you have cards give cards of value
         If not say Go Fish
          
-//Example if the one player asks you for a 3, give all 3's if not Go Fish.
-
     If the person didn't recieve card they asked for pull a card from draw deck:
         If the person recieves the card they asked for
     Repeat turn:
@@ -36,7 +34,7 @@ Repeat until each person has recieved 5 cards including the dealer:
         If deck < 5:
                 take all cards.
         If no cards in deck:
-                wait until game is over.
+                wait until every player has finished.
         
     Repeat turns until cards are empty:
         If cards for everyone have emptied:

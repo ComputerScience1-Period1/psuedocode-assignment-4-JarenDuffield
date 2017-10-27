@@ -8,45 +8,38 @@ Repeat until each person has recieved 5 cards including the dealer:
         Place the rest of the deck in the middle of the circle.
         The cards in the middle are now the draw deck.
         While each player recieved cards:
-                Do nothing
-        Else:
-                 Put in ascending order from 2 to Ace.
-        If you recieve all 4 of a card:
+               
+         If you recieve all 4 of a card:
                 Place down all 4 cards for a point
-        Else:
+         Else:
                 Don't put cards down.
-        If you get the starting 5 with no pairs or matching 4:
-                Put them in order.
+         then:
+                order cards from ace to king
         
-//Example if you are dealt all 4 aces and 1 King put the 4 aces down gaining that point.
+//Example if you are dealt all 4 aces and 1 King put the 4 aces down gaining that point.:
        While player asks for a card it must be a card in their deck
                 If not they can't ask
         Else if player asks you for card:
-                If you have cards give cards of value
-        If not say Go Fish
+                If you have cards give cards of value:
+        If not say Go Fish:
          
     If the person didn't recieve card they asked for pull a card from draw deck:
-        If the person recieves the card they asked for
-    Repeat turn:
+        If the person recieves the card they asked for:
+     Then:
+        Repeat turn:
         If not turn is over.
         If you have run out of cards:
                 If you run out of cards draw 5 from deck
         If deck < 5:
-                take all cards.
+                take remaining cardsin deck.
         If no cards in deck:
-                wait until every player has finished.
+                then next player's turn.
         
     Repeat turns until cards are empty:
         If cards for everyone have emptied:
                 count points to find winner
         If player has all 4 of a card:
                 add one point
-        If the 4 matching cards are face cards or 2-10 cards: 
-                add one point 
         // Count all points and add up
         If player has more points than the other players they win
-        If tie no winner.
-  
-//You win if you end the game with more points than your opponent
-  One point = 4 of same card value
-  Count points to find winner.
+        If equal amount of points then tie.

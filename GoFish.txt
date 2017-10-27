@@ -40,7 +40,7 @@ Repeat until each person has recieved 5 cards including the dealer:
         If cards for everyone have emptied:
                 count points to find winner
         If player has all 4 of a card:
-                add one point
+                add one point 
         If the 4 matching cards are face cards or 2-10 cards: 
                 add one point 
         // Count all points and add up
